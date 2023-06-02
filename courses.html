@@ -1,0 +1,202 @@
+<!--
+    Name: Guannan Zhao
+    Date: Feb 20, 2023
+    Section: CST8285 section 300 
+    Lab: 301
+    File: courses.html
+    Lab objective: build a dynamic personal website with pages for introduction, resume, courses and portfolio using HTML, CSS and Javascript
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Guannan Zhao">
+    <meta name="description" content="a courses page containing the courses studied so far and offering the features to search, filter and sort courses">
+    <meta name="keywords" content="courses, computer, programming, database, linux, web">
+    <title>Courses</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- 
+            NordWood Themes, 12 December 2017. [Online]. Available: https://unsplash.com/photos/wt4gUtdv1-U. [Accessed 4 February 2023]. 
+        -->
+        <img id="header-image" src="images/office_desk.jpg" alt="a white desk with a potted plant and a macbook on it">
+        <h1 id="header-title">Guannan Zhao</h1>
+        <nav id="top-nav">
+            <a href="index.html">Home</a> 
+            <a href="resume.html">Resume</a> 
+            <a href="courses.html">Courses</a> 
+            <!-- <a href="portfolio.html">Portfolios</a> -->
+        </nav>
+    </header>
+    <main id="course-main">
+        <h2 id="course-list-title">Courses List</h2>
+        <form id="widgets">
+            <input id="searchbox" type="search" placeholder="Search Course by Name or Code">
+            <fieldset id="filter">
+                <label>
+                    <strong>Filter by Level</strong>
+                </label>
+                <input type="radio" id="level-1" name="level" value="1">
+                <label class="level-label" for="level-1">Level 1</label>
+                <input type="radio" id="level-2" name="level" value="2">
+                <label class="level-label" for="level-2">Level 2</label>
+            </fieldset>
+            <fieldset id="sort">
+                <label for="level-sort">
+                    <strong>Sort by Level</strong>
+                </label>
+                <select id="level-sort" name="level-sort" size="1">
+                    <option value="level-low-to-high">Lowest to Highest&nbsp;&nbsp;</option>
+                    <option value="level-high-to-low">Highest to Lowest</option>
+                </select>
+            </fieldset>
+        </form>
+        <div id="course-list">
+            <section class="course-info">
+                <img class="course-book" src="images/CST8101_book.jpeg" alt="Computer Essentials Book Cover">
+                <div>
+                    <h3>Computer Essentials</h3>
+                    <p class="course-code-level">
+                        <strong>Course Code:</strong> 
+                        <span class="course-code">CST8101</span> 
+                        <strong>Level:</strong> 
+                        <span class="course-level">1</span>
+                    </p>
+                    <p class="course-description">
+                        <strong>Description:</strong> The essentials of computer software, hardware, and laptop management form the foundation for building further technical programming skills. Topics include backups creation, virus protection installation, files management, basic numerical systems etc.
+                    </p>
+                </div>
+            </section>
+            <section class="course-info">
+                <img class="course-book" src="images/CST8215_book.jpeg" alt="Introduction to Database Book Cover">
+                <div>
+                    <h3>Introduction to Database</h3>
+                    <p class="course-code-level">
+                        <strong>Course Code:</strong> 
+                        <span class="course-code">CST8215</span> 
+                        <strong>Level:</strong>
+                        <span class="course-level">1</span>
+                    </p>
+                    <p class="course-description">
+                        <strong>Description:</strong> This course introduces the fundamentals of relational databases design using Entity Relation Diagrams (ERDs), and Structured Query Language (SQL) to create, modify and query a database. It also covers the topic related to designing and creating databases that are maintainable, secure and adaptable to change in business requirements, using normalization.
+                    </p>
+                </div>
+            </section>
+            <section class="course-info">
+                <img class="course-book" src="images/CST8116_book.jpeg" alt="Introduction to Computer Programming Book Cover">
+                <div>
+                    <h3>Introduction to Computer Programming</h3>
+                    <p class="course-code-level">
+                        <strong>Course Code:</strong> 
+                        <span class="course-code">CST8116</span> 
+                        <strong>Level:</strong> 
+                        <span class="course-level">1</span>
+                    </p>
+                    <p class="course-description">
+                        <strong>Description:</strong> This course aims to help students develop introductory knowledge of computer programming with emphasis on problem analysis and design, using algorithms, pseudocode, flowcharts, UML Class Diagrams and testing, with the Java programming language used as a means to implement problem solution designs. 
+                    </p>
+                </div>
+            </section>
+            <section class="course-info">
+                <img class="course-book" src="images/MAT8001C_book.jpeg" alt="Technical Mathematics for Computer Science Book Cover">
+                <div>
+                    <h3>Technical Mathematics for Computer Science</h3>
+                    <p class="course-code-level">
+                        <strong>Course Code:</strong> 
+                        <span class="course-code">MAT8001C</span> 
+                        <strong>Level:</strong> 
+                        <span class="course-level">1</span>
+                    </p>
+                    <p class="course-description">
+                        <strong>Description:</strong> This course is delivered in a modular format and students learn to manipulate algebraic expressions, solve algebraic equations and linear systems and the properties of graph algebraic and transcendental functions. Students also explore computer number systems in addition to Boolean algebra and logic to help solve problems involving computer systems. 
+                    </p>
+                </div>
+            </section>
+            <section class="course-info">
+                <img class="course-book" src="images/ENL1813T_book.jpeg" alt="Communications I Book Cover">
+                <div>
+                    <h3>Communications I</h3>
+                    <p class="course-code-level">
+                        <strong>Course Code:</strong> 
+                        <span class="course-code">ENL1813T</span> 
+                        <strong>Level:</strong> 
+                        <span class="course-level">1</span>
+                    </p>
+                    <p class="course-description">
+                        <strong>Description:</strong> Using a practical, vocation-oriented approach, students focus on meeting the requirements of effective communication. Through a combination of lectures, exercises, and independent learning, students practise writing, speaking, reading, listening, locating and documenting information and using technology to communicate professionally. 
+                    </p>
+                </div>
+            </section>
+            <section class="course-info">
+                <img class="course-book" src="images/CST8284_book.jpeg" alt="Object Oriented Programming (Java) Book Cover">
+                <div>
+                    <h3>Object Oriented Programming (Java)</h3>
+                    <p class="course-code-level">
+                        <strong>Course Code:</strong> 
+                        <span class="course-code">CST8284</span> 
+                        <strong>Level:</strong> 
+                        <span class="course-level">2</span>
+                    </p>
+                    <p class="course-description">
+                        <strong>Description:</strong> This course covers important object oriented concepts, such as encapsulation, inheritance, abstraction and polymorphism. Students also explore the basics of data structures and algorithms as well as basic Graphical User Interface (GUI) programming. 
+                    </p>
+                </div>
+            </section>
+            <section class="course-info">
+                <img class="course-book" src="images/CST2355_book.jpeg" alt="Database Systems Book Cover">
+                <div>
+                    <h3>Database Systems</h3>
+                    <p class="course-code-level">
+                        <strong>Course Code:</strong> 
+                        <span class="course-code">CST2355</span> 
+                        <strong>Level:</strong> 
+                        <span class="course-level">2</span>
+                    </p>
+                    <p class="course-description">
+                        <strong>Description:</strong> Students acquire practical experience using market-leading object-relational database management systems like Oracle and SQL Server. Database concepts covered include advanced SQL, case structures, rollup and cube operations, metadata manipulation, data storage and retrieval, security and transaction control and data warehousing.
+                    </p>
+                </div>
+            </section>
+            <section class="course-info">
+                <img class="course-book" src="images/CST8285_book.jpeg" alt="Web Programming Book Cover">
+                <div>
+                    <h3>Web Programming</h3>
+                    <p class="course-code-level">
+                        <strong>Course Code:</strong> 
+                        <span class="course-code">CST8285</span> 
+                        <strong>Level:</strong> 
+                        <span class="course-level">2</span>
+                    </p>
+                    <p class="course-description">
+                        <strong>Description:</strong> This course help students develop basic skills of web programming, website design and implementation to construct and maintain their own websites. JavaScript, HTML5, and PHP are used to explore web-based solutions to problems of increasing interactivity and complexity.
+                    </p>
+                </div>
+            </section>
+            <section class="course-info">
+                <img class="course-book" src="images/CST8102_book.jpeg" alt="Operating System Fundamentals (GNU/Linux) Book Cover">
+                <div>
+                    <h3>Operating System Fundamentals (GNU/Linux)</h3>
+                    <p class="course-code-level">
+                        <strong>Course Code:</strong> 
+                        <span class="course-code">CST8102</span> 
+                        <strong>Level:</strong> 
+                        <span class="course-level">2</span>
+                    </p>
+                    <p class="course-description">
+                        <strong>Description:</strong> This course introduces the basic concepts and components of Operating Systems (OS), and how they function and interact with hardware and software components. Students examine the details of operating system structures, process management, storage management, installation, configuration, and administration based on the GNU/Linux operating system. 
+                    </p>
+                </div>
+            </section>
+        </div>  
+    </main>
+    <footer>
+        <p id="copyright-info">&copy; Created by Guannan Zhao</p>
+    </footer>
+</body>
+</html>

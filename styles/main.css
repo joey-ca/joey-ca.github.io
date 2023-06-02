@@ -1,0 +1,512 @@
+/*
+  Name: Guannan Zhao
+  Date: Feb 20, 2023
+  Section: CST8285 section 300 
+  Lab: 301
+  File: main.css
+  Lab objective: build a dynamic personal website with pages for introduction, resume, courses and portfolio using HTML, CSS and Javascript
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+
+/* global css starts */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+
+h2, h3, h4, h5, h6 {
+  color: rgb(215, 57, 100);
+}
+
+h2:not(#portfolio-main>h2) {
+  text-align: center;
+  margin: 2em 0;
+}
+
+a, a:link, a:visited {
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+main {
+  padding: 0 10%;
+}
+
+ul, ol {
+  padding-inline-start: 0;
+  list-style: none;
+  margin: 0;
+}
+
+footer {
+  background-color: rgb(215, 57, 100);
+  color: #ffffff;
+  margin-bottom: 0;
+  padding: 0.4em 0;
+}
+/* global css ends */
+
+/* header css starts */
+header {
+  position: relative;
+}
+
+#header-image {
+  width: 100%;
+  height: auto;
+}
+
+#header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2.5em;
+  color: rgb(252, 252, 252);
+  background-color: rgb(64, 64, 64);
+}
+
+#top-nav {
+  position: absolute;
+  top: 1.4em;
+  right: 1.65em;
+}
+
+nav a {
+  color:#000000;
+  text-align: center;
+  padding: 0 1.4em;
+  font-size: 1em;
+}
+  
+nav a:hover {
+  color: rgb(215, 57, 100);
+}
+/* header css ends */
+
+/* main content css starts */
+/* homepage css starts */
+
+#introduction a:link,
+#introduction a:visited {
+  color: rgb(215, 57, 100); 
+}
+
+#personal-info {
+  display: flex;
+  flex-direction: row;
+  padding: 2em 0;
+}
+
+#personal-photo {
+  width: 30%;
+  height: auto;
+}
+
+#hobby-activity {
+  margin-left: 4em;
+}
+
+#hobby-activity h3 {
+  margin-top: 0;
+}
+
+#linkedin-button {
+  display: inline-block;
+  color: inherit;
+  border: 1px solid rgb(215, 57, 100);
+  border-radius: 0.3em;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+#linkedin-button:hover {
+  color:#ffffff;
+  background-color: rgb(215, 57, 100);
+}
+
+#copyright-info {
+  text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+/* homepage css ends */
+
+/* resume css starts */
+#resume-main {
+  margin-bottom: 2em;
+}
+
+#resume-main h3 {
+  margin-top: 0;
+}
+
+#resume-main hr {
+  margin-top: 2em;
+  border: 0.5px solid rgb(222, 222, 222);
+}
+
+#resume-content {
+  display: flex;
+  width: 100%;
+}
+
+#resume-main section:not(#resume-right):not(#resume-left) {
+  padding: 1em;
+}
+
+#resume-left,
+#objective,
+#work-experience,
+#education {
+  border: 0.5px solid rgb(215, 57, 100);
+}
+
+#resume-left:hover,
+#objective:hover,
+#work-experience:hover,
+#education:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+}
+
+#resume-left {
+  width: 30%;
+}
+
+#resume-right {
+  margin-left: 1em;
+}
+
+#work-experience,
+#education {
+  margin-top: 1em;
+}
+
+#contact {
+  line-height: 2em;
+}
+
+.skill-bar {
+  width: 100%;
+  background-color: rgb(222, 222, 222);
+  border-radius: 1em;
+}
+
+#bar-1, 
+#bar-2, 
+#bar-3, 
+#bar-4,
+#bar-5,
+#bar-6,
+#bar-7,
+#bar-8,
+#bar-9,
+#bar-10,
+#bar-11,
+#bar-12,
+#bar-13,
+#bar-14,
+#bar-15 {
+  background-color: rgb(215, 57, 100);
+  color: #ffffff;
+  text-align: center;
+  border-radius: 1em;
+  padding: 0.2em 0;
+  font-size: 0.8em;
+}
+
+#bar-1 {
+  width: 100%;
+}
+
+#bar-2 {
+  width: 100%;
+}
+
+#bar-3 {
+  width: 100%;
+}
+
+#bar-4 {
+  width: 100%;
+}
+
+#bar-5{
+  width: 90%;
+}
+
+#bar-6 {
+  width: 80%;
+}
+
+#bar-7 {
+  width: 80%;
+}
+
+#bar-8 {
+  width: 90%;
+}
+
+#bar-9 {
+  width: 75%;
+}
+
+#bar-10 {
+  width: 100%;
+}
+
+#bar-11 {
+  width: 100%;
+}
+
+#bar-12 {
+  width: 90%;
+}
+
+#bar-13 {
+  width: 90%;
+}
+
+#bar-14 {
+  width: 80%;
+}
+
+#bar-15 {
+  width: 90%;
+}
+
+#portfolio-thumbnail {
+  border: 0.5px solid #000000;
+  display: block;
+}
+
+#portfolio-thumbnail img {
+  width: 100%;
+}
+
+#portfolio-button {
+  text-align: center;
+}
+
+#portfolio-button a {
+  color: rgb(215, 57, 100);
+}
+
+#portfolio-button a:hover {
+  color: #000000;
+}
+
+#portfolio-description {
+  text-align: center;
+}
+
+#objective {
+  line-height: 2em;
+}
+
+.work-date, .education-date {
+  color: rgb(215, 57, 100);
+}
+
+#work-experience ul {
+  list-style: initial;
+  line-height: 2em;
+  padding-inline-start: 1em;
+}
+
+.school-date {
+  display: flex;
+  justify-content: space-between;
+}
+
+#education p {
+  margin-top: 0;
+}
+/* resume css ends */
+
+/* portfolio css starts */
+#portfolio-main {
+  margin-bottom: 2em;
+  margin-top: 3em;
+}
+
+#portfolio-main h1, 
+#portfolio-main h2,
+#portfolio-main h3 {
+  color: #000000;
+}
+
+#email,
+#address {
+  width: 34em;
+}
+/* portfolio css ends */
+
+/* courses css starts */
+#course-main {
+  margin-bottom: 2em;
+  margin-top: 3em;
+}
+
+#course-main fieldset {
+  display: inline-block;
+  font-size: 1em;
+  border: none;
+}
+
+#searchbox,
+#level-sort {
+  height: 2em;
+  font-size: 0.9em;
+}
+
+#searchbox {
+  margin-right: 0.35em;
+  width: 35%;
+  min-width: 18em;
+}
+
+#level-sort {
+  margin-left: 0.5em;
+}
+
+#course-list {
+  margin-top: 2em;
+}
+
+.course-info {
+  display: flex;
+  justify-content: center;
+  border: 0.5px solid rgb(215, 57, 100);
+  margin-bottom: 2em;
+}
+
+.course-book {
+  width: 150px;
+  height: auto;
+  margin-right: 2em;
+}
+
+.course-code {
+  margin-right: 3em;
+}
+
+.is-hidden {
+  display: none;
+}
+/* courses css ends */
+/* main content css ends */
+
+/* responsive css starts */
+@media only screen and (max-width: 1260px) {
+  #course-main fieldset {
+    display: block;
+    padding: 0;
+    margin-top: 1em;
+  }
+
+  #searchbox {
+    margin-right: 0;
+  }
+  
+  #level-sort {
+    margin-left: 0;
+  }
+
+  #personal-info {
+    display: block;
+    padding-top: 0;
+  }
+
+  #personal-photo {
+    width: 100%;
+    height: auto;
+  }
+
+  #hobby-activity {
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+  #resume-content {
+    display: block;
+  }
+
+  #resume-left {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  
+  #resume-right {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .course-info {
+    flex-direction: column;
+    padding: 0.5em;
+  }
+
+  .course-book {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+  }
+
+  .course-code {
+    margin-right: 0.7em;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  #top-nav {
+    width: 100%;
+    text-align: center;
+    right: 0;
+  }
+  
+  #header-title {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+
+  nav a {
+    padding: 0 3vw;
+  }
+
+  h2:not(#portfolio-main>h2) {
+    margin: 1.5em 0;
+  }
+
+  #portfolio-main {
+    padding: 0 5%;
+  }
+
+  #email {
+    width: 96%;
+  }
+
+  #address {
+    width: 100%;
+  }
+
+  #userinfotable td,
+  #locationtable td {
+    display: block;
+  }
+
+  #level-1 {
+    margin-left: 0;
+  }
+} 
+/* responsive css ends */
