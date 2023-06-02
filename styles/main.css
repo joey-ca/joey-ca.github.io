@@ -473,6 +473,10 @@ nav a:hover {
   #header-title {
     font-size: 1.5em;
   }
+  
+  .school-date {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 480px) {
